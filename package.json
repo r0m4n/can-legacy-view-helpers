@@ -55,7 +55,7 @@
     "can-view-parser": "^3.4.0"
   },
   "devDependencies": {
-    "documentjs": "^0.5.0",
+    "documentjs": "^0.5.1",
     "jshint": "^2.9.1",
     "steal": "^1.5.2",
     "steal-qunit": "^1.0.1",
