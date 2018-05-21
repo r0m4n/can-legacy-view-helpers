@@ -52,7 +52,13 @@ var pendingHookups = [],
 		}
 
 		// Finally, if all else is `false`, `toString()` it.
-		return "" + input;
+		if (input && input.cloneNode) {
+			var div = document.createElement('div');
+			div.appendChild( input.cloneNode(true) );
+			return div.innerHTML;
+		}
+		return input;
+
 	},
 	// Returns escaped/sanatized content for anything other than a live-binding
 	contentEscape = function (txt, tag) {
