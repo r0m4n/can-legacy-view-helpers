@@ -57,7 +57,7 @@ var pendingHookups = [],
 			div.appendChild( input.cloneNode(true) );
 			return div.innerHTML;
 		}
-		return input;
+		return "" + input;
 
 	},
 	// Returns escaped/sanatized content for anything other than a live-binding
